@@ -1,0 +1,21 @@
+tests:
+  - id: T1
+    description: orchestrator three-phase pipeline
+    assert:
+      contains: ["literature-survey", "review-synthesis", "paper-quality-gate", "quality-report"]
+      sections: ["Quick Start", "Workflow", "Failure Modes"]
+
+  - id: T2
+    description: mode selection not forced e2e
+    assert:
+      contains: ["mode", "survey", "end_to_end", "ASK", "roadmap_only"]
+
+  - id: T3
+    description: authoritative params
+    assert:
+      contains: ["params.yaml", "min_verified_ratio", "prisma", "quality_gate"]
+
+  - id: T4
+    description: quality gate blocking
+    assert:
+      contains: ["quality-report", "fabricated", "author_signoff", "Quality Gate"]

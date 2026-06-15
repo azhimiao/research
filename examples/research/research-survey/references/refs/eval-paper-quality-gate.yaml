@@ -1,0 +1,21 @@
+tests:
+  - id: T1
+    description: quality audit outputs
+    assert:
+      contains: ["quality-report", "quality-log", "verification_rate"]
+      sections: ["Quick Start", "Workflow", "Failure Modes"]
+
+  - id: T2
+    description: rubric and blocking
+    assert:
+      contains: ["quality-rubric", "blocker", "fabrication", "strict"]
+
+  - id: T3
+    description: mandatory checklist
+    assert:
+      contains: ["Quality Gate Checklist", "CLAIM_CITATION", "RECENCY", "blocker"]
+
+  - id: T4
+    description: author sign-off
+    assert:
+      contains: ["author_signoff", "sign-off", "passed"]

@@ -1,0 +1,21 @@
+tests:
+  - id: T1
+    description: search and screening workflow
+    assert:
+      contains: ["search-protocol", "screening-log", "included-sources"]
+      sections: ["Quick Start", "Workflow", "Failure Modes"]
+
+  - id: T2
+    description: citation verification
+    assert:
+      contains: ["citation-verification", "Crossref", "UNVERIFIED", "VERIFY"]
+
+  - id: T3
+    description: PRISMA and frameworks
+    assert:
+      contains: ["PICO", "SPIDER", "prisma", "protocol-first"]
+
+  - id: T4
+    description: standards reference
+    assert:
+      contains: ["authority-standards", "min_sources", "verified"]

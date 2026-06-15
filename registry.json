@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-06-15T00:00:00+00:00",
+  "skills": [
+    {
+      "name": "skill-core",
+      "version": "2.0.0",
+      "description": "Skill Protocol v2 compiler and meta-skill for building Agent Skills at scale.",
+      "path": "skill-core",
+      "status": "stable",
+      "tags": ["meta", "scripts"]
+    },
+    {
+      "name": "literature-survey",
+      "version": "2.0.0",
+      "description": "Conduct traceable, standards-aligned literature investigation: structured research question, reproducible search, screening log, verified paper notes.",
+      "path": "examples/research/literature-survey",
+      "status": "stable",
+      "tags": ["example", "theme:research"]
+    },
+    {
+      "name": "paper-quality-gate",
+      "version": "2.0.0",
+      "description": "Audit review artifacts for credibility before delivery: citation integrity, verification rates, synthesis quality, methodology transparency.",
+      "path": "examples/research/paper-quality-gate",
+      "status": "stable",
+      "tags": ["example", "theme:research"]
+    },
+    {
+      "name": "research-survey",
+      "version": "2.0.0",
+      "description": "Orchestrate credible research surveys: literature-survey → review-synthesis → paper-quality-gate with adjustable parameters.",
+      "path": "examples/research/research-survey",
+      "status": "stable",
+      "tags": ["example", "theme:research"]
+    },
+    {
+      "name": "review-synthesis",
+      "version": "2.0.0",
+      "description": "Produce narrative review and structured evidence from verified literature artifacts: thematic synthesis, consensus/debate, gaps.",
+      "path": "examples/research/review-synthesis",
+      "status": "stable",
+      "tags": ["example", "theme:research", "review"]
+    }
+  ]
+}
